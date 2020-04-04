@@ -1,0 +1,260 @@
+﻿@import url(sanitize.css);
+
+body {
+    /* background-image: url(../img/back.png); */
+}
+
+
+header{
+    display:none;
+    flex-wrap:wrap;
+    background-color:white;
+}
+
+header h1{
+    margin:20px;
+    font-size:50px;
+    text-align:left
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header span {
+    color: rgba(231, 128, 54, 0.75);
+}
+
+
+
+
+h1{
+    text-align:center;
+    font-size: 50px;
+}
+
+
+header nav {
+    justify-content: flex-end;
+    margin:auto 0;
+}
+
+header li{
+    display:inline;
+    font-size:1.4em;
+    margin:10px;
+}
+
+header li:hover{
+    color:orange;
+}
+
+.toggle{
+
+    width:50px;
+    height:50px;
+    border-radius:10px;
+    border:1px solid black;
+    background-color:white;
+    margin:auto 20px;
+    display:none;
+}
+
+.toggle span{
+    display:block;
+    border-bottom:1px solid black;
+    width:20px;
+    height:5px;
+    margin:0 auto;
+}
+
+.toggle section{
+    margin-top:15px;
+}
+
+
+hr{
+    border-width:3px;
+    border-color:aqua;
+}
+
+.Profile{
+    background-color:antiquewhite;
+    height:750px;
+    width:100%;
+    background-image:url(../img/title.png);
+}
+
+.Profile h1{
+    /* color:white; */
+    padding-top:20px;
+}
+
+.Profile section{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.Profile ul{
+    list-style:none;
+}
+.Profile h2{
+    border-bottom:1px solid white;
+}
+
+.box{
+    background-color:rgba(128, 128, 128, 0.55);
+    border-radius:10px;
+    width:35%;
+    margin:20px;
+    text-align:center;
+    padding:15px;
+    color:white;
+    font-size:1.2em;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    height:auto;
+}
+.skill-item {
+    margin: 20px;
+    /* background-color: rgba(128, 128, 128, 0.55); */
+    color: rgb(15, 11, 11);
+    width: 400px;
+    height:500px;
+    border-radius:10px;
+    padding:10px;
+    font-size:1.2em;
+}
+
+.skill-item:hover{
+    background-color:rgba(236, 234, 234, 0.8);
+}
+
+.skill-item h2{
+    text-align:center;
+}
+
+.skill-item i{
+    display:inline-block;
+    text-align:center;
+    width:100%;
+    margin:20px 0;
+}
+.skill-item ul{
+    list-style:none;
+    text-align:left;
+}
+
+
+.items{
+    display:flex;
+    /*min-height:600px;*/
+    height:100%;
+}
+
+.item {
+    width: 500px;
+    margin-left: 20px;
+    margin-right:20px;
+    /* background-color: rgba(128, 128, 128, 0.55); */
+    /* padding: 10px; */
+    text-align: center;
+    padding-bottom: 10px;
+}
+    .item img {
+        width: 100%;
+        height: 45%;
+    }
+
+.discription{
+    text-align:left;
+    margin:0 auto;
+}
+
+.discription a{
+    text-align: center;
+    font-size:18px;
+}
+
+
+.contact {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.55);
+    padding:20px;
+    color:white;
+}
+
+footer{
+    text-align:center;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    header{
+        position:fixed;
+        justify-content:center;
+        z-index:30;
+        width:100%;
+    }
+
+    header nav{
+        display:none;
+        border-top:3px solid aqua;
+        text-align: center;
+        width:100%;
+    }
+
+    header nav li{
+        display:inline;
+        
+        /*border-bottom:1px solid #7973739f;*/    }
+
+    .toggle{
+        display:block;
+    }
+
+    .Profile{
+        padding-top:200px;
+        height:1500px;
+    }
+
+    .Profile section{
+        display:block;
+    }
+
+    .box {
+        width: 60%;
+        margin: 10px auto;
+        z-index: 20;
+    }
+
+    .Skill .skill-box {
+        display: block;
+        min-height: 1600px;
+        z-index: 20;
+    }
+
+    .Skill .skill-item{
+        margin:10px auto;
+        width:85%;
+    }
+
+    .items{
+        display:block;
+    }
+    .item {
+        margin: 0 auto;
+        width: 70%;
+        z-index: 20;
+    }
+
+}
+

@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    
+    <title>Port Folio</title>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1><span>P</span>ort<span>F</span>olio</h1></a>
+        <div class="toggle">
+            <section>
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+        </div>
+        <nav>
+            <ul>
+                <li id="profile">Profile</li>
+                <li id="skill">Skill</li>
+                <li id="works">Works</li>
+                <li id="contact">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <div class="Profile">
+            <h1>Profile</h1>
+
+            <section>
+                <div class="box">
+                    <h2>自己紹介</h2>
+                    <p>
+                        大崎康太
+                        <br>
+                        情報系大学卒の修士1年です。
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>働き方</h2>
+                    <p>
+                        HTML/CSSのコーディングやレスポンシブ化を
+                        <br>
+                        行います。
+                        <br>
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>資格</h2>
+                    <ul>
+                        <li>基本情報技術者試験合格</li>
+                        <li>応用情報技術者試験合格</li>
+                        <li>TOEIC 695点</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2>趣味</h2>
+                    <p>
+                        ライブ観戦
+                        <br>
+                        カラオケ
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+        <div class="Skill">
+            <h1>Skill</h1>
+            <div class="skill-box">
+                <div class="skill-item">
+                    <h2>プログラミング言語</h2>
+                    <i class="fas fa-laptop-code fa-5x"></i>
+                    <ul>
+                        <li>C</li>
+                        <li>python</li>
+                        <li>Java</li>
+                        <li>HTML / CSS
+                            <ul>
+                                <li>Boostrap</li>
+                                <li>Sass</li>
+                            </ul>
+                        </li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+
+                <div class="skill-item">
+                    <h2>その他技術</h2>
+                    <ul>
+                        <li>django</li>
+                        <li>Node.js</li>
+                        <li>HTTP通信</li>
+                        <li>スクレイピング</li>
+                        <li>
+                            機械学習
+                            <ul>
+                                <li>keras(CNN等の分類器作成)</li>
+                                <li>Weka(txt,csvファイルの教師あり学習)</li>
+                            </ul>
+                        </li>
+                        <li>OpenCV(画像キャプチャ、カスケード顔分類、データセットの作成)</li>
+                        <li>Visual Studio</li>
+                    </ul>
+                </div>
+
+                <div class="skill-item">
+                    <h2>研究・イベント</h2>
+                    <i class="fas fa-book fa-5x"></i>
+                    <ul>
+                        <li>情報処理学会全国大会81回</li>
+                        <li>2020年電子情報通信学会</li>
+                    </ul>
+                    <ul>
+                        <li>JPHacks2019</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="Works">
+            <h1>Works</h1>
+            <div class="items">
+                <div class="item">
+                    <h2>チケットサーチ</h2>
+                    <img src="./img/ticket-search.png">
+                    <div class="discription">
+                        <p>
+                            検索バーに入力すると複数のチケットサイトから
+                            <br>
+                            入力したキーワードに関するイベントをスクレイピングするWebアプリです。
+                        </p>
+                        <a href = "https://github.com/kouta0530/ticket-search"><p>github</p></a>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h2>観光地スケジューリング</h2>
+                    <img src="./img/ryokou.png">
+                    <div class="discription">
+                        <p>
+                            行きたい観光地の順番を決めてくれるアプリです。
+                            <br>
+                            検索バーに行きたい観光地を入力し,追加ボタンを押すと行きたい場所のリストに加えられます。
+                            <br>
+                            <br>
+                            スケジューリングボタンを押すとリスト内の場所を最適な順番に並び替えてくれます。
+                        </p>
+                        <a href="https://sightseeingscheduling.web.app"><p>公開先</p></a>
+                        <a href = "https://github.com/kouta0530/Sightseeing-Scheduling"><p>github</p></a>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <h2>HTML整形アプリケーション</h2>
+                    <img src="./img/html_seikei.png">
+                    <div class="discription">
+                        <p>
+                            外部の私立大学教授からの依頼で作成した
+                            <br>アプリケーションです。
+                            <br>
+                            <br>
+                            スクレイピングしたhtmlファイルから余計な空白や改行を省略し、
+                            複数のファイルを一つのテキストファイルに変換するアプリです。
+                            <br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>kouta0530@gmail.com</h2>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer>
+        &copy; kouta
+    </footer>
+
+    <script>
+        
+        $("header").fadeIn(2000);
+        $("header").css("display","flex");
+        
+
+        /*要素のフェードイン、アウト*/
+        //$(".box").fadeOut();
+
+        /*$(".Profile").hover(function () {
+            $(".box").fadeIn();
+        }, function () {
+            $(".box").fadeOut();
+            });*/
+/*
+        $(".Skill").hover(function () {
+            $(".skill-item").fadeIn();
+        }, function () {
+            $(".skill-item").fadeOut();
+        });
+
+        $(".Works").hover(function () {
+            $(".item").fadeIn();
+        }, function () {
+            $(".item").fadeOut();
+        });
+        
+*/
+        /*ここからスクロールボタン*/
+
+        $("#profile").click(function () {
+            scroll(".Profile");
+        });
+
+        $("#skill").click(function () {
+            scroll(".Skill");
+        });
+
+        $("#works").click(function () {
+            scroll(".Works");
+        });
+        $("#contact").click(function () {
+            scroll(".contact");
+        });
+
+        function scroll(element) {
+                console.log(element);
+                var top = $(element).offset().top;
+                $('html, body').animate({ scrollTop: top });
+        }
+
+
+        $(".toggle").click(function () {
+            $("header").find("nav").slideToggle();
+        });
+    </script>
+</body>
+</html>

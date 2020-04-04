@@ -1,0 +1,102 @@
+$logo_color:rgba(231, 128, 54, 0.75);
+
+body{
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+
+        h1{
+            font-size: 50px;
+            text-align: left;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        span{
+            color:$span_color;
+        }
+
+        nav{
+            justify-content: flex-end;
+            margin:auto 0;
+
+            li{
+                display:inline;
+                font-size:1.4em;
+                margin:10px;
+
+                &:hover{
+                    color:$logo_color;
+                }
+            }
+        }
+
+        .toggle{
+            width:50px;
+            height:50px;
+            border-radius:10px;
+            border:1px solid black;
+            background-color:white;
+            margin:auto 20px;
+            display:none;
+
+            section{
+                margin-top: 15px;
+
+                span{
+                    display:block;
+                    border-bottom:1px solid black;
+                    width:20px;
+                    height:5px;
+                    margin:0 auto;
+                }
+            }
+        }
+    }
+
+    main{
+        .Profile{
+            background-color:antiquewhite;
+            height:750px;
+            width:100%;
+            background-image:url(../img/title.png);
+
+            h1{
+                padding-top:20px;
+            }
+
+            section{
+                display:flex;
+                justify-content:center;
+                flex-wrap:wrap;
+
+                .box{
+                    
+                    h2{
+                        border-bottom:1px solid white;
+                    }
+
+                    background-color:rgba(128, 128, 128, 0.55);
+                    border-radius:10px;
+                    width:35%;
+                    margin:20px;
+                    text-align:center;
+                    padding:15px;
+                    color:white;
+                    font-size:1.2em;
+                }
+            }
+
+        }
+
+
+    }
+
+    footer{
+        text-align: center;
+    }
+}
