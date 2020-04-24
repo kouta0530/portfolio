@@ -58,7 +58,7 @@ main .Profile section {
 }
 
 main .Profile section .box {
-  width: 30%;
+  width: 400px;
   height: 200px;
   margin: 20px 50px;
   padding: 5px;
