@@ -1,0 +1,166 @@
+header {
+  font-size: 1.5em;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+header span {
+  color: rgba(231, 128, 54, 0.75);
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header ul li:hover {
+  color: orange;
+}
+
+hr {
+  color: #161515;
+}
+
+main {
+  font-size: 1.2em;
+}
+
+main .Profile {
+  text-align: center;
+  background-image: url("../img/title.png");
+  width: 100%;
+  height: auto;
+  margin: 0px 0;
+  padding: 0;
+}
+
+main .Profile section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .Profile section .box {
+  width: 30%;
+  height: 200px;
+  margin: 20px 50px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.384);
+  color: white;
+  border-radius: 10px;
+}
+
+main .Profile section li {
+  list-style: none;
+}
+
+main .Skill {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 0;
+}
+
+main .Skill .skill-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .Skill .skill-box .skill-item {
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  padding: 20px 0px;
+  border-radius: 4px;
+}
+
+main .Skill .skill-box .skill-item i {
+  margin: 20px 0;
+}
+
+main .Skill .skill-box .skill-item li {
+  list-style: none;
+}
+
+main .Skill .skill-box .skill-item:hover {
+  background-color: rgba(126, 121, 121, 0.521);
+  color: white;
+}
+
+main .Works {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 0;
+}
+
+main .Works .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+main .Works .items .item {
+  width: 400px;
+  height: auto;
+  margin: 30px;
+  padding: 10px;
+}
+
+main .Works .items .item img {
+  width: 80%;
+  height: 200px;
+  margin: 20px;
+}
+
+main .Works .items .item a {
+  text-align: center;
+}
+
+main .contact {
+  text-align: center;
+  background-color: rgba(83, 81, 81, 0.705);
+  color: white;
+  padding: 20px 0;
+}
+
+main .discription {
+  margin: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=test.css.map */

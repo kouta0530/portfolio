@@ -4,52 +4,55 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     
     <title>Port Folio</title>
 
-    
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><h1><span>P</span>ort<span>F</span>olio</h1></a>
-        <div class="toggle">
+    <div class="tcontainer">
+        <header>
+            <div class="row">
+                <div class="col-sm-8 col-md-12">
+                    <h1 class="logo"><a href="index.html"><span>P</span>ort<span>F</span>olio</a></h1>
+                </div>
+                <nav class="col-sm-4 col-md-12">
+                    <ul>
+                        <li id="profile">Profile</li>
+                        <li id="skill">Skill</li>
+                        <li id="works">Works</li>
+                        <li id="contact">Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        <!--div class="toggle">
             <section>
                 <span></span>
                 <span></span>
                 <span></span>
             </section>
-        </div>
-        <nav>
-            <ul>
-                <li id="profile">Profile</li>
-                <li id="skill">Skill</li>
-                <li id="works">Works</li>
-                <li id="contact">Contact</li>
-            </ul>
-        </nav>
-    </header>
-
-    
-
-    <main>
+        </div-->
+        </header>
+        <hr>
+        <main>
         <div class="Profile">
-            <h1>Profile</h1>
+            <h2>Profile</h2>
 
             <section>
                 <div class="box">
-                    <h2>自己紹介</h2>
-                    <p>
+                    <h3>自己紹介</h3>
+                    <p class="discription">
                         大崎康太
                         <br>
                         情報系大学卒の修士1年です。
                     </p>
                 </div>
                 <div class="box">
-                    <h2>働き方</h2>
-                    <p>
+                    <h3>働き方</h3>
+                    <p class= "discription">
                         HTML/CSSのコーディングやレスポンシブ化を
                         <br>
                         行います。
@@ -57,7 +60,7 @@
                     </p>
                 </div>
                 <div class="box">
-                    <h2>資格</h2>
+                    <h3>資格</h3>
                     <ul>
                         <li>基本情報技術者試験合格</li>
                         <li>応用情報技術者試験合格</li>
@@ -65,8 +68,8 @@
                     </ul>
                 </div>
                 <div class="box">
-                    <h2>趣味</h2>
-                    <p>
+                    <h3>趣味</h3>
+                    <p class="discription">
                         ライブ観戦
                         <br>
                         カラオケ
@@ -76,12 +79,12 @@
         </div>
         
         <div class="Skill">
-            <h1>Skill</h1>
+            <h2>Skill</h2>
             <div class="skill-box">
                 <div class="skill-item">
-                    <h2>プログラミング言語</h2>
-                    <i class="fas fa-laptop-code fa-5x"></i>
-                    <ul>
+                    <h3>プログラミング言語</h2>
+                    <i class="fas fa-laptop-code fa-3x"></i>
+                    <ul class="discription">
                         <li>C</li>
                         <li>python</li>
                         <li>Java</li>
@@ -97,11 +100,11 @@
                 </div>
 
                 <div class="skill-item">
-                    <h2>その他技術</h2>
-                    <ul>
+                    <h3>その他技術</h3>
+                    <ul class="discription">
                         <li>django</li>
                         <li>Node.js</li>
-                        <li>HTTP通信</li>
+                        <li>flask</li>
                         <li>スクレイピング</li>
                         <li>
                             機械学習
@@ -111,18 +114,16 @@
                             </ul>
                         </li>
                         <li>OpenCV(画像キャプチャ、カスケード顔分類、データセットの作成)</li>
-                        <li>Visual Studio</li>
+                        <li>mysql</li>
                     </ul>
                 </div>
 
                 <div class="skill-item">
-                    <h2>研究・イベント</h2>
-                    <i class="fas fa-book fa-5x"></i>
-                    <ul>
+                    <h3>研究・イベント</h3>
+                    <i class="fas fa-book fa-3x"></i>
+                    <ul class="discription">
                         <li>情報処理学会全国大会81回</li>
                         <li>2020年電子情報通信学会</li>
-                    </ul>
-                    <ul>
                         <li>JPHacks2019</li>
                     </ul>
                 </div>
@@ -131,14 +132,16 @@
         </div>
 
         <div class="Works">
-            <h1>Works</h1>
+            <h2>Works</h2>
             <div class="items">
                 <div class="item">
-                    <h2>チケットサーチ</h2>
+                    <h3>チケットサーチ</h3>
                     <img src="./img/ticket-search.png">
                     <div class="discription">
                         <p>
-                            検索バーに入力すると複数のチケットサイトから
+                            検索バーに入力すると
+                            <br>
+                            複数のチケットサイトから
                             <br>
                             入力したキーワードに関するイベントをスクレイピングするWebアプリです。
                         </p>
@@ -148,14 +151,17 @@
                 </div>
 
                 <div class="item">
-                    <h2>観光地スケジューリング</h2>
+                    <h3>観光地スケジューリング</h3>
                     <img src="./img/ryokou.png">
                     <div class="discription">
                         <p>
-                            行きたい観光地の順番を決めてくれるアプリです。
+                            行きたい観光地の順番を
                             <br>
-                            検索バーに行きたい観光地を入力し,追加ボタンを押すと行きたい場所のリストに加えられます。
+                            決めてくれるアプリです。
                             <br>
+                            検索バーに行きたい観光地を入力し
+                            <br>
+                            追加ボタンを押すと行きたい場所のリストに加えられます。
                             <br>
                             スケジューリングボタンを押すとリスト内の場所を最適な順番に並び替えてくれます。
                         </p>
@@ -165,12 +171,13 @@
                 </div>
                 
                 <div class="item">
-                    <h2>HTML整形アプリケーション</h2>
+                    <h3>HTML整形アプリケーション</h3>
                     <img src="./img/html_seikei.png">
                     <div class="discription">
                         <p>
-                            外部の私立大学教授からの依頼で作成した
-                            <br>アプリケーションです。
+                            外部の私立大学教授からの依頼で
+                            <br>
+                            作成したアプリケーションです。
                             <br>
                             <br>
                             スクレイピングしたhtmlファイルから余計な空白や改行を省略し、
@@ -179,76 +186,45 @@
                         </p>
                     </div>
                 </div>
+                <div class="item">
+                    <h3>PuzzleMaker</h3>
+                    <img src = "./img/puzzlemaker.png">
+                    <div class="discription">
+                        <p>
+                            自分の好きな画像をアップロードすると、
+                            その画像をベースにしたパズルゲームを作成するアプリです。
+                            <br>
+                            <br>
+                            データベースとファイルに保存することで、ほかの人がアップロードした
+                            パズルも遊べるようにしています。
+                        </p>
+                    </div>
+                </div>
 
             </div>
         </div>
 
         <div class="contact">
-            <h2>kouta0530@gmail.com</h2>
+            <h2>Contact</h2>
+            <div>
+                <p>
+                    下記のメールアドレスに
+                    <br>
+                    お気軽にご連絡ください。
+                    <br>
+                </p>
+            </div>
+
+            <h3>saki02261@gmail.com</h3>
         </div>
-    </main>
+        </main>
 
-    <hr>
+        <hr>
 
-    <footer>
-        &copy; kouta
-    </footer>
-
-    <script>
-        
-        $("header").fadeIn(2000);
-        $("header").css("display","flex");
-        
-
-        /*要素のフェードイン、アウト*/
-        //$(".box").fadeOut();
-
-        /*$(".Profile").hover(function () {
-            $(".box").fadeIn();
-        }, function () {
-            $(".box").fadeOut();
-            });*/
-/*
-        $(".Skill").hover(function () {
-            $(".skill-item").fadeIn();
-        }, function () {
-            $(".skill-item").fadeOut();
-        });
-
-        $(".Works").hover(function () {
-            $(".item").fadeIn();
-        }, function () {
-            $(".item").fadeOut();
-        });
-        
-*/
-        /*ここからスクロールボタン*/
-
-        $("#profile").click(function () {
-            scroll(".Profile");
-        });
-
-        $("#skill").click(function () {
-            scroll(".Skill");
-        });
-
-        $("#works").click(function () {
-            scroll(".Works");
-        });
-        $("#contact").click(function () {
-            scroll(".contact");
-        });
-
-        function scroll(element) {
-                console.log(element);
-                var top = $(element).offset().top;
-                $('html, body').animate({ scrollTop: top });
-        }
-
-
-        $(".toggle").click(function () {
-            $("header").find("nav").slideToggle();
-        });
-    </script>
+        <footer>
+            &copy; saki
+        </footer>
+    </div>
+    <script src = "./script/script.js"></script>
 </body>
 </html>
