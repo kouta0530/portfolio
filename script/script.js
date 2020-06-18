@@ -30,13 +30,22 @@
             scroll(".Profile");
         });
 
+        $("#history").click(function () {
+            scroll(".dream");
+        });
+
         $("#skill").click(function () {
-            scroll(".Skill");
+            scroll(".skill");
         });
 
         $("#works").click(function () {
             scroll(".Works");
         });
+        
+        $("#dream").click(function () {
+            scroll(".dream");
+        });
+
         $("#contact").click(function () {
             scroll(".contact");
         });

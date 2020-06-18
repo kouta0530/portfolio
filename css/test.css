@@ -1,15 +1,25 @@
-a {
-  color: black;
-  text-decoration: none;
+/*
+a{
+    color:black;
+    text-decoration: none;
+    &:hover{
+        color:orange;
+        text-decoration: none; 
+    }
 }
-
-a:hover {
-  color: orange;
-  text-decoration: none;
-}
-
+*/
 header {
   font-size: 1.5em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: inline;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
 }
 
 header span {
@@ -18,11 +28,12 @@ header span {
 
 header ul {
   list-style: none;
+  padding-top: 20px;
 }
 
 header ul li {
   display: inline;
-  margin: 0 10px;
+  margin: 0px 20px;
 }
 
 header ul li:hover {
@@ -33,20 +44,15 @@ hr {
   color: #161515;
 }
 
-main {
-  font-size: 1.2em;
-}
-
-main .Profile {
-  text-align: center;
+.Profile {
   background-image: url("../img/title.png");
   width: 100%;
   height: auto;
-  margin: 0px 0;
+  margin: 0px;
   padding: 0;
 }
 
-main .Profile section {
+.Profile .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,71 +61,94 @@ main .Profile section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-main .Profile section .box {
-  width: 450px;
-  height: 250px;
-  margin: 20px 50px;
-  padding: 10px;
+  width: 100%;
+  height: 500px;
+  margin: 0px auto;
+  padding: 0px 0;
+  text-align: left;
+  font-size: 28px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.384);
   color: white;
+}
+
+.Profile .box .discription {
+  margin-top: 50px;
+}
+
+.Profile .box img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.history {
+  width: 100%;
+  height: 600px;
+  margin: 0px auto;
+  padding: 0;
+  background-image: url("../img/28052.png");
+  font-size: 24px;
+  color: white;
+}
+
+.history h2 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.history ul {
+  width: 60%;
+  height: auto;
+  margin: 50px 50px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.384);
   border-radius: 10px;
 }
 
-main .Profile section li {
+.history ul li {
+  margin: 10px 20px;
   list-style: none;
 }
 
-main .Skill {
-  text-align: center;
-  width: 100%;
-  height: auto;
-  margin: 20px 0;
-  padding: 0;
-}
-
-main .Skill .skill-box {
+.skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .Skill .skill-box .skill-item {
-  width: 400px;
-  height: auto;
-  margin: 20px;
-  padding: 20px 0px;
-  border-radius: 4px;
-}
-
-main .Skill .skill-box .skill-item i {
-  margin: 20px 0;
-}
-
-main .Skill .skill-box .skill-item li {
-  list-style: none;
-}
-
-main .Skill .skill-box .skill-item:hover {
-  background-color: rgba(126, 121, 121, 0.521);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 30px 0;
   color: white;
 }
 
-main .Works {
-  text-align: center;
-  width: 100%;
+.skill .language {
+  width: 30%;
   height: auto;
-  margin: 20px 0;
+  margin: 0 20px;
   padding: 0;
+  font-size: 25px;
+  border: solid 2px orange;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.384);
 }
 
-main .Works .items {
+.skill .language h3 {
+  text-align: center;
+}
+
+.skill .app {
+  width: 65%;
+  height: auto;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,38 +157,149 @@ main .Works .items {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  font-size: 24px;
+  border: solid 2px orange;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.384);
 }
 
-main .Works .items .item {
+.skill .app h3 {
+  margin-left: 20px;
+}
+
+.skill .app img {
+  width: 50%;
+  height: 70%;
+  margin: auto 50px;
+}
+
+.Works {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.Works h2 {
+  font-size: 32px;
+}
+
+.Works .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Works .items .item {
   width: 400px;
   height: auto;
   margin: 30px;
   padding: 10px;
 }
 
-main .Works .items .item img {
+.Works .items .item img {
   width: 80%;
   height: 200px;
   margin: 20px;
 }
 
-main .Works .items .item a {
+.Works .items .item a {
   text-align: center;
+  font-size: 1.4em;
 }
 
-main .contact {
+.Works .items .item p {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.dream {
+  width: auto;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/81820.png");
+  font-size: 24px;
+  color: white;
+}
+
+.dream h2 {
+  margin: 30px;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.dream .discription {
+  margin: 30px 50px;
+}
+
+.piller-h {
+  text-align: center;
+  font-size: 32px;
+}
+
+.piller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.piller .card {
+  width: 400px;
+  height: 300px;
+  margin: 5% 20px;
+  padding: 20px 0 0 0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.piller .card img {
+  width: 0;
+  height: 0;
+  margin: 20px;
+}
+
+.contact {
   text-align: center;
   background-color: rgba(83, 81, 81, 0.705);
   color: white;
   padding: 20px 0;
+  font-size: 20px;
 }
 
-main .discription {
+.contact .github {
+  color: black;
   margin: 10px;
-  text-align: left;
-  font-size: 18px;
 }
 
+.contact .twitter {
+  color: skyblue;
+  margin: 10px;
+}
+
+/*
+    .discription{
+        margin:10px;
+        text-align: left;
+        font-size:18px;
+    }
+    */
 footer {
   text-align: center;
 }

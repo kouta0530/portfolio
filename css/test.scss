@@ -2,6 +2,8 @@
 
 $logo_color:rgba(231, 128, 54, 0.75);
 $hr_color:rgb(22, 21, 21);
+$gray:rgba(0, 0, 0, 0.384);
+/*
 a{
     color:black;
     text-decoration: none;
@@ -10,18 +12,27 @@ a{
         text-decoration: none; 
     }
 }
-
+*/
 header{
     font-size:1.5em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: inline;
+    a{
+        color: black;
+        text-decoration: none;
+    }
     span{
         color:$logo_color;
     }
     ul{
         list-style: none;
+        padding-top: 20px;
         //text-align: right;
         li{
             display:inline;
-            margin:0 10px;
+            margin:0px 20px;
             &:hover{
                 color:orange;
             }
@@ -33,76 +44,168 @@ hr{
     color:$hr_color;
 }
 
-main{
-    font-size:1.2em;
-    .Profile{
-        text-align: center;
-        background-image: url("../img/title.png");
-        @include Frame(100%,auto,0px 0,0);
-        section{
+
+.Profile{
+    background-image: url("../img/title.png");
+    @include Frame(100%,auto,0px,0);
+    .box{
             @include flexBox(wrap,center);
-            .box{
-                @include Frame(450px,250px,20px 50px,10px);
-                background-color: rgba(0, 0, 0, 0.384);
-                color:white;
-                border-radius: 10px;
-            }   
-            li{
-                list-style: none;
+            @include Frame(100%,500px,0px auto,0px 0);
+            text-align: left;
+            font-size:28px;
+            border-radius: 10px;
+            background-color: $gray;
+            color:white;
+
+            .discription{
+                margin-top:50px;
             }
+
+            img{
+                width: 300px;
+                height: 300px;
+                border-radius: 200px;
+                margin-left:20px;
+                margin-top: 50px;
+            }
+    }
+}
+
+.history{
+    @include Frame(100% ,600px,0px auto,0);
+    background-image: url("../img/28052.png");
+    font-size: 24px;
+    color: white;
+    h2{
+        margin-left: 20px;
+        margin-bottom:20px;
+    }
+    ul{
+        @include Frame(60%,auto,50px 50px,5px);
+        background-color: $gray;
+        border-radius:10px;
+        li{
+            margin:10px 20px;
+            list-style: none;
         }
     }
+}
 
-    .Skill{
-        text-align:center;
-        @include Frame(100%,auto,20px 0,0);
-        .skill-box{
-            @include flexBox(wrap,center);
-            .skill-item{
-                @include Frame(400px,auto,20px,20px 0px);
-                border-radius: 4px;
-                i{
-                    margin:20px 0;
-                }
-                li{
-                    list-style:none;
-                }
-                &:hover{
-                    background-color: rgba(126, 121, 121, 0.521);
-                    color:white;
-                }
+.skill{
+    @include flexBox(wrap,justify);
+    @include Frame(100%,500px,0,30px 0);
+    color:white;
+    .language{
+            h3{
+                text-align: center;
             }
-        }
+            @include Frame(30%,auto,0 20px,0);
+            font-size:25px;
+            border: solid 2px orange;
+            border-radius: 3px;
+            background-color: $gray; 
     }
+    .app{   
+        @include Frame(65%,auto,0,0);
+        @include flexBox(wrap,left);
+        h3{
+                margin-left: 20px;
+        }
+        img{
+            width: 50%;
+            height: 70%;
+            margin:auto 50px;
+        }
+        font-size:24px;
+        border: solid 2px orange;
+        border-radius: 3px;
+        background-color: $gray; 
+    }
+} 
 
-    .Works{
+.Works{
         text-align: center;
         @include Frame(100%,auto,20px 0,0);
-
+        h2{
+            font-size: 32px;
+        }
         .items{
-            @include flexBox(wrap,left);
+            @include flexBox(wrap,center);
             .item{
                 @include card(400px,auto,30px,10px,80%,200px);
                 a{
                     text-align: center;
+                    font-size: 1.4em;
+                }
+                p{
+                    font-size:1.2em;
+                    text-align:left;
                 }
             }
         }
+}
+
+
+
+.dream{
+    @include Frame(auto,500px,0,0);
+    background-image: url("../img/81820.png");
+    font-size: 24px;
+    color:white;
+    h2{
+        margin:30px;
+        padding:20px;
+        font-size: 40px;
+    }
+    .discription{
+        margin:30px 50px;
+    }
+}
+
+.piller-h{
+    text-align: center;
+    font-size: 32px;
+}
+
+.piller{
+    @include flexBox(wrap,center);
+    @include Frame(auto,auto,0,0);
+    .card{
+        @include card(400px,300px,5% 20px,20px 0 0 0,0,0);
+        //background-color: $gray;
+        //color:white;
+        border-radius: 5px; 
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+
+
+.contact{
+    text-align:center;
+    background-color: rgba(83, 81, 81, 0.705);
+    color:white;
+    padding:20px 0;
+    font-size: 20px;
+    .github{
+        color:black;
+        margin: 10px;
     }
 
-    .contact{
-        text-align:center;
-        background-color: rgba(83, 81, 81, 0.705);
-        color:white;
-        padding:20px 0;
+    .twitter{
+        color:skyblue;
+        margin: 10px;
     }
-
+}
+    /*
     .discription{
         margin:10px;
         text-align: left;
         font-size:18px;
     }
-}
+    */
+
 
 footer{
     text-align: center;
