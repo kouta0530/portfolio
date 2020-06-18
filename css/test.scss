@@ -72,7 +72,8 @@ hr{
 }
 
 .history{
-    @include Frame(100% ,600px,0px auto,0);
+    @include Frame(100% ,auto,0px auto,0);
+    min-height: 600px;
     background-image: url("../img/28052.png");
     font-size: 24px;
     color: white;
@@ -121,6 +122,7 @@ hr{
         border-radius: 3px;
         background-color: $gray; 
     }
+
 } 
 
 .Works{
@@ -148,7 +150,8 @@ hr{
 
 
 .dream{
-    @include Frame(auto,500px,0,0);
+    @include Frame(auto,auto,0,10px);
+    min-height: 500px;
     background-image: url("../img/81820.png");
     font-size: 24px;
     color:white;
@@ -209,4 +212,49 @@ hr{
 
 footer{
     text-align: center;
+}
+
+@media screen and (max-width:768px){
+    .Profile{
+        display: block;
+        font-size: 1.1em;
+        .box{
+            height: 1000px;
+        }
+    }
+    .history{
+        ul{
+            margin: 0px;
+            font-size: 18px;
+            width: 80%;
+        }
+    }
+
+    .skill{
+        display: block;
+        min-height: 1200px;
+        .language{
+            @include Frame(100%,auto,10px 0,0);
+        }
+        .app{
+            width:auto;
+            height: 800px;
+            display: block;
+            
+            img{
+                margin-left:30%;
+                width: 50%;
+                height: 30%;
+            }
+        }
+    }
+
+    .Works{
+        margin:0px;
+    }
+    .dream{
+        h2{
+            font-size: 28px;
+        }
+    }
 }
