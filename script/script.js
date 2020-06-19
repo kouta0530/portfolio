@@ -1,29 +1,18 @@
-        $("header").fadeIn(2000);
-        $("header").css("display","flex");
+        //$("header").fadeIn(2000);
+        //$("header").css("display","flex");
         
-
-        /*要素のフェードイン、アウト*/
-        //$(".box").fadeOut();
-
-        /*$(".Profile").hover(function () {
-            $(".box").fadeIn();
-        }, function () {
-            $(".box").fadeOut();
-            });*/
-/*
-        $(".Skill").hover(function () {
-            $(".skill-item").fadeIn();
-        }, function () {
-            $(".skill-item").fadeOut();
+        $(".fa-toggle-off").click(function(){
+            $("nav").slideToggle();
         });
-
+        
+        /*
         $(".Works").hover(function () {
             $(".item").fadeIn();
         }, function () {
             $(".item").fadeOut();
         });
-        
-*/
+        */
+
         /*ここからスクロールボタン*/
 
         $("#profile").click(function () {

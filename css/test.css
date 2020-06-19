@@ -14,7 +14,9 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header a {
@@ -24,6 +26,14 @@ header a {
 
 header span {
   color: rgba(231, 128, 54, 0.75);
+}
+
+header .fa-toggle-off {
+  display: none;
+}
+
+header nav {
+  display: block;
 }
 
 header ul {
@@ -278,8 +288,9 @@ hr {
 }
 
 .contact {
+  background-image: url("../img/compass-5137269_1280.jpg");
   text-align: center;
-  background-color: rgba(83, 81, 81, 0.705);
+  background-color: rgba(0, 0, 0, 0.384);
   color: white;
   padding: 20px 0;
   font-size: 20px;
@@ -313,6 +324,25 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  header h1 {
+    display: inline;
+  }
+  header .fa-toggle-off {
+    display: inline;
+    text-align: right;
+  }
+  header nav {
+    width: 100%;
+    display: none;
+  }
   .Profile {
     display: block;
     font-size: 1.1em;
