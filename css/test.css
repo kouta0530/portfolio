@@ -367,11 +367,12 @@ footer {
   }
   .skill .app {
     width: auto;
+    height: 800px;
     display: block;
   }
   .skill .app img {
     margin-left: 30%;
-    width: 50%;
+    width: 30%;
     height: 30%;
   }
   .Works {
