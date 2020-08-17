@@ -135,6 +135,7 @@ hr{
         text-align: center;
         @include Frame(100%,auto,20px 0,0);
         h2{
+            margin-top: 10%;
             font-size: 32px;
         }
         .items{
