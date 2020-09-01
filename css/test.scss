@@ -88,7 +88,7 @@ hr{
         margin-bottom:20px;
     }
     ul{
-        @include Frame(60%,auto,50px 50px,5px);
+        @include Frame(60%,auto,50px 50px,3px);
         background-color: $gray;
         border-radius:10px;
         li{
