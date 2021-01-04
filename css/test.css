@@ -100,6 +100,7 @@ hr {
   margin: 0px auto;
   padding: 0;
   min-height: 600px;
+  padding-bottom: 5px;
   background-image: url("../img/28052.png");
   font-size: 24px;
   color: white;
@@ -114,7 +115,7 @@ hr {
   width: 60%;
   height: auto;
   margin: 50px 50px;
-  padding: 5px;
+  padding: 3px;
   background-color: rgba(0, 0, 0, 0.384);
   border-radius: 10px;
 }

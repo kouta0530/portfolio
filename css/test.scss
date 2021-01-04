@@ -80,6 +80,7 @@ hr{
 .history{
     @include Frame(100% ,auto,0px auto,0);
     min-height: 600px;
+    padding-bottom:5px;
     background-image: url("../img/28052.png");
     font-size: 24px;
     color: white;
