@@ -135,7 +135,7 @@ hr {
       -ms-flex-pack: justify;
           justify-content: justify;
   width: 100%;
-  height: 500px;
+  height: auto;
   margin: 0;
   padding: 30px 0;
   color: white;
@@ -173,6 +173,10 @@ hr {
   border: solid 2px orange;
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.384);
+  background-image: url("../img/skill1.png");
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: 75%;
 }
 
 .skill .app h3 {
