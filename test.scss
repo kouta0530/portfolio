@@ -1,0 +1,290 @@
+@import "./mixin.scss";
+
+$logo_color: rgba(231, 128, 54, 0.75);
+$hr_color: rgb(22, 21, 21);
+$gray: rgba(0, 0, 0, 0.384);
+/*
+a{
+    color:black;
+    text-decoration: none;
+    &:hover{
+        color:orange;
+        text-decoration: none; 
+    }
+}
+*/
+header {
+  font-size: 1.5em;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  span {
+    color: $logo_color;
+  }
+  .fa-toggle-off {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  ul {
+    list-style: none;
+    padding-top: 20px;
+    //text-align: right;
+    li {
+      display: inline;
+      margin: 0px 20px;
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+}
+
+hr {
+  color: $hr_color;
+}
+
+.Profile {
+  background-image: url("../img/title.png");
+  @include Frame(100%, auto, 0px, 0);
+  .box {
+    @include flexBox(wrap, center);
+    @include Frame(100%, 500px, 0px auto, 0px 0);
+    text-align: left;
+    font-size: 28px;
+    border-radius: 10px;
+    background-color: $gray;
+    color: white;
+
+    .discription {
+      margin-top: 50px;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 200px;
+      margin-right: 30px;
+      margin-top: 50px;
+    }
+  }
+}
+
+.history {
+  @include Frame(100%, auto, 0px auto, 0);
+  min-height: 600px;
+  padding-bottom: 5px;
+  background-image: url("../img/28052.png");
+  font-size: 24px;
+  color: white;
+  h2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  ul {
+    @include Frame(60%, auto, 50px 50px, 3px);
+    background-color: $gray;
+    border-radius: 10px;
+    li {
+      margin: 10px 20px;
+      list-style: none;
+    }
+  }
+}
+
+.skill {
+  @include flexBox(wrap, justify);
+  @include Frame(100%, auto, 0, 30px 0);
+  color: white;
+  .language {
+    h3 {
+      text-align: center;
+    }
+    @include Frame(30%, auto, 0 20px, 0);
+    font-size: 25px;
+    border: solid 2px orange;
+    border-radius: 3px;
+    background-color: $gray;
+  }
+  .app {
+    @include Frame(65%, auto, 0, 0);
+    @include flexBox(wrap, left);
+    h3 {
+      margin-left: 20px;
+    }
+    img {
+      width: 50%;
+      height: 70%;
+      margin: auto 50px;
+    }
+    font-size: 24px;
+    border: solid 2px orange;
+    border-radius: 3px;
+    background-color: $gray;
+
+    background-image: url("../img/skill1.png");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: 75%;
+  }
+}
+
+.Works {
+  text-align: center;
+  @include Frame(100%, auto, 20px 0, 0);
+  h2 {
+    margin-top: 10%;
+    font-size: 32px;
+  }
+  .items {
+    @include flexBox(wrap, center);
+    .item {
+      @include card(400px, auto, 30px, 10px, 80%, 200px);
+      a {
+        text-align: center;
+        font-size: 1.4em;
+      }
+      p {
+        font-size: 1.2em;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.dream {
+  @include Frame(auto, auto, 0, 10px);
+  min-height: 500px;
+  background-image: url("../img/81820.png");
+  font-size: 24px;
+  color: white;
+  h2 {
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+  }
+  .discription {
+    margin: 30px 50px;
+  }
+}
+
+.piller-h {
+  text-align: center;
+  font-size: 32px;
+}
+
+.piller {
+  @include flexBox(wrap, center);
+  @include Frame(auto, auto, 0, 0);
+  .card {
+    @include card(400px, 300px, 5% 20px, 20px 0 0 0, 0, 0);
+    //background-color: $gray;
+    //color:white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.contact {
+  background-image: url("../img/compass-5137269_1280.jpg");
+  text-align: center;
+  background-color: $gray;
+  color: white;
+  padding: 20px 0;
+  font-size: 20px;
+  .github {
+    color: black;
+    margin: 10px;
+  }
+
+  .twitter {
+    color: skyblue;
+    margin: 10px;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+}
+/*
+    .discription{
+        margin:10px;
+        text-align: left;
+        font-size:18px;
+    }
+    */
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+    position: sticky;
+    top: 0;
+    h1 {
+      display: inline;
+    }
+    .fa-toggle-off {
+      display: inline;
+      text-align: right;
+    }
+    nav {
+      width: 100%;
+      display: none;
+    }
+  }
+  .Profile {
+    display: block;
+    font-size: 1.1em;
+    .box {
+      height: 1000px;
+    }
+  }
+  .history {
+    ul {
+      margin: 0px;
+      font-size: 18px;
+      width: 80%;
+    }
+  }
+
+  .skill {
+    display: block;
+    min-height: 1200px;
+    .language {
+      @include Frame(100%, auto, 10px 0, 0);
+    }
+    .app {
+      width: auto;
+      height: 800px;
+      display: block;
+
+      img {
+        margin-left: 30%;
+        width: 30%;
+        height: 30%;
+      }
+    }
+  }
+
+  .Works {
+    margin: 0px;
+  }
+  .dream {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
