@@ -84,6 +84,7 @@ hr {
 
 .Profile .box .discription {
   margin-top: 50px;
+  white-space: pre-wrap;
 }
 
 .Profile .box img {
@@ -234,6 +235,7 @@ hr {
 .Works .items .item p {
   font-size: 1.2em;
   text-align: left;
+  white-space: pre-line;
 }
 
 .dream {
@@ -255,6 +257,8 @@ hr {
 
 .dream .discription {
   margin: 30px 50px;
+  width: 700px;
+  white-space: pre-wrap;
 }
 
 .piller-h {
